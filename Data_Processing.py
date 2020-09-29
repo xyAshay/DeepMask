@@ -2,7 +2,7 @@ from tensorflow.keras.preprocessing.image import load_img, img_to_array, array_t
 from tensorflow.keras.applications.mobilenet_v2 import preprocess_input
 from tensorflow.keras.utils import to_categorical
 from sklearn.preprocessing import LabelBinarizer
-from tqdm.notebook import tqdm
+from tqdm import tqdm
 from imutils import paths
 import numpy as np
 import os

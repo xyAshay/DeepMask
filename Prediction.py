@@ -14,7 +14,7 @@ DeepFace = load_model("DeepFaceMask.model")
 
 def detect_masks(frame, faceNet, DeepFace):
     (height, width) = frame.shape[:2]
-    blob = cv2.dnn.blobFromImage(frame, 1.0, (100, 100),
+    blob = cv2.dnn.blobFromImage(frame, 1.0, (300, 300),
                                  (104.0, 177.0, 123.0))
     faceNet.setInput(blob)
     detections = faceNet.forward()
